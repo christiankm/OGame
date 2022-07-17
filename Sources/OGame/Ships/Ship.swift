@@ -6,7 +6,7 @@
 
 import Foundation
 
-public protocol Ship: Identifiable, Hashable, CustomStringConvertible {
+public protocol Ship: Buildable, Identifiable, Hashable, CustomStringConvertible {
     var name: String { get }
 //    var cost: Resources { get }
     // var structuralIntegrity { get }
