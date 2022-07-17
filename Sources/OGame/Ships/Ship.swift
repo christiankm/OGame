@@ -1,13 +1,12 @@
 //
-//  File.swift
-//  
-//
-//  Created by Christian Mitteldorf on 12/09/2021.
+//  OGame
+//  Copyright © 2022 Christian Mitteldorf. All rights reserved.
+//  MIT license, see LICENSE file for details.
 //
 
 import Foundation
 
-public protocol Ship: CustomStringConvertible/*, Identifiable*/ {
+public protocol Ship: Identifiable, Hashable, CustomStringConvertible {
     var name: String { get }
 //    var cost: Resources { get }
     // var structuralIntegrity { get }
@@ -22,9 +21,19 @@ extension Ship {
     //}
 }
 
-//public extension Ship: Identifiable {}
+// MARK: Hashable
 
 extension Ship {
+
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+}
+
+// MARK: CustomStringConvertible
+
+extension Ship {
+
     public var description: String {
         name
     }
