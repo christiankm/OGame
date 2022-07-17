@@ -10,7 +10,35 @@ public enum CelestialType: Int {
     case moon = 3
     case outerSpace
 
-    var name: String {
+    public var isPlanet: Bool {
+        self == .planet
+    }
+
+    public var isMoon: Bool {
+        self == .moon
+    }
+
+    public var isDebrisField: Bool {
+        self == .debrisField
+    }
+
+    public var isOuterSpace: Bool {
+        self == .outerSpace
+    }
+}
+
+// MARK: Identifiable
+
+extension CelestialType: Identifiable {
+    public var id: Identifier {
+        rawValue
+    }
+}
+
+// MARK: Nameable
+
+extension CelestialType {
+    public var name: String {
         switch self {
         case .planet:
             return "Planet"
@@ -21,11 +49,5 @@ public enum CelestialType: Int {
         case .outerSpace:
             return "outer space"
         }
-    }
-}
-
-extension CelestialType: Identifiable {
-    public var id: Identifier {
-        rawValue
     }
 }

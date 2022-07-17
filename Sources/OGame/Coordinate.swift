@@ -24,19 +24,19 @@ public struct Coordinate {
     public let type: CelestialType
 
     public var isPlanet: Bool {
-        type == .planet
+        type.isPlanet
     }
 
     public var isMoon: Bool {
-        type == .moon
+        type.isMoon
     }
 
     public var isDebrisField: Bool {
-        type == .debrisField
+        type.isDebrisField
     }
 
     public var isOuterSpace: Bool {
-        type == .outerSpace
+        type.isOuterSpace || position == 16 || position == 17
     }
 
     public init(galaxy: Galaxy, system: System, position: Position, type: CelestialType) {
@@ -60,7 +60,11 @@ public struct Coordinate {
     }
 }
 
+// MARK: Equatable
+
 extension Coordinate: Equatable {}
+
+// MARK: CustomStringConvertible
 
 extension Coordinate: CustomStringConvertible {
 
