@@ -1,8 +1,7 @@
 //
-//  File.swift
-//  
-//
-//  Created by Christian Mitteldorf on 13/09/2021.
+//  OGame
+//  Copyright © 2022 Christian Mitteldorf. All rights reserved.
+//  MIT license, see LICENSE file for details.
 //
 
 import Foundation
