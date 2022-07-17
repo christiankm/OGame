@@ -1,4 +1,10 @@
-public enum CoordinateType: Int {
+//
+//  OGame
+//  Copyright © 2022 Christian Mitteldorf. All rights reserved.
+//  MIT license, see LICENSE file for details.
+//
+
+public enum CelestialType: Int {
     case planet = 1
     case debrisField = 2
     case moon = 3
@@ -7,7 +13,7 @@ public enum CoordinateType: Int {
     var name: String {
         switch self {
         case .planet:
-            return "planet"
+            return "Planet"
         case .debrisField:
             return "debris field"
         case .moon:
@@ -18,7 +24,7 @@ public enum CoordinateType: Int {
     }
 }
 
-extension CoordinateType {
+extension CelestialType: Identifiable {
     public var id: Identifier {
         rawValue
     }

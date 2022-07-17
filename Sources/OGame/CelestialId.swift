@@ -6,5 +6,5 @@
 
 import Foundation
 
-/// The planet or moons diameter described in kilometers.
-public typealias Diameter = Int
+/// A unique identifier in the universe for a celestial body.
+public typealias CelestialId = Int
