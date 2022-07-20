@@ -20,6 +20,10 @@ final class CruiserTests: XCTestCase {
     }
 
     func testCost() throws {
-        XCTAssertEqual(sut.cost, Resources(metal: 20000, crystal: 7000, deuterium: 2000))
+        XCTAssertEqual(sut.cost, Resources(metal: 20_000, crystal: 7_000, deuterium: 2_000))
+    }
+
+    func testBaseStructuralIntegrity() throws {
+        XCTAssertEqual(sut.baseStructuralIntegrity, 27_000)
     }
 }

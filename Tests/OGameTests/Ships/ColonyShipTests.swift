@@ -20,6 +20,10 @@ final class ColonyShipTests: XCTestCase {
     }
 
     func testCost() throws {
-        XCTAssertEqual(sut.cost, Resources(metal: 10000, crystal: 20000, deuterium: 10000))
+        XCTAssertEqual(sut.cost, Resources(metal: 10_000, crystal: 20_000, deuterium: 10_000))
+    }
+
+    func testBaseStructuralIntegrity() throws {
+        XCTAssertEqual(sut.baseStructuralIntegrity, 30_000)
     }
 }

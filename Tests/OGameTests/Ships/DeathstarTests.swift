@@ -20,6 +20,10 @@ final class DeathstarTests: XCTestCase {
     }
 
     func testCost() throws {
-        XCTAssertEqual(sut.cost, Resources(metal: 5000000, crystal: 4000000, deuterium: 1000000))
+        XCTAssertEqual(sut.cost, Resources(metal: 5_000_000, crystal: 4_000_000, deuterium: 1_000_000))
+    }
+
+    func testBaseStructuralIntegrity() throws {
+        XCTAssertEqual(sut.baseStructuralIntegrity, 9_000_000)
     }
 }

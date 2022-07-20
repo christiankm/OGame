@@ -10,7 +10,7 @@ public struct SolarSatellite: Ship {
 
     public let id = 212
     public let name = "Solar Satellite"
-    public let cost = Resources(crystal: 2000, deuterium: 500)
+    public let cost = Resources(crystal: 2_000, deuterium: 500)
 
     public init() {}
 }

@@ -22,4 +22,8 @@ final class BattlecruiserTests: XCTestCase {
     func testCost() throws {
         XCTAssertEqual(sut.cost, Resources(metal: 30_000, crystal: 40_000, deuterium: 15_000))
     }
+
+    func testBaseStructuralIntegrity() throws {
+        XCTAssertEqual(sut.baseStructuralIntegrity, 70_000)
+    }
 }

@@ -28,4 +28,5 @@ public enum ShipType: GameId, Identifiable, Equatable {
     public var id: GameId {
         rawValue
     }
- }
+}
+

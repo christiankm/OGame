@@ -20,6 +20,10 @@ final class LargoCargoTests: XCTestCase {
     }
 
     func testCost() throws {
-        XCTAssertEqual(sut.cost, Resources(metal: 6000, crystal: 6000))
+        XCTAssertEqual(sut.cost, Resources(metal: 6_000, crystal: 6_000))
+    }
+
+    func testBaseStructuralIntegrity() throws {
+        XCTAssertEqual(sut.baseStructuralIntegrity, 12_000)
     }
 }

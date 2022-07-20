@@ -20,6 +20,10 @@ final class PathfinderTests: XCTestCase {
     }
 
     func testCost() throws {
-        XCTAssertEqual(sut.cost, Resources(metal: 8000, crystal: 15000, deuterium: 8000))
+        XCTAssertEqual(sut.cost, Resources(metal: 8_000, crystal: 15_000, deuterium: 8_000))
+    }
+
+    func testBaseStructuralIntegrity() throws {
+        XCTAssertEqual(sut.baseStructuralIntegrity, 23_000)
     }
 }

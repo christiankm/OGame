@@ -23,4 +23,7 @@ final class TradeShipTests: XCTestCase {
         XCTAssertEqual(sut.cost, Resources())
     }
 
+    func testBaseStructuralIntegrity() throws {
+        XCTAssertEqual(sut.baseStructuralIntegrity, 0)
+    }
 }

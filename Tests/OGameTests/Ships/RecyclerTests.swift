@@ -20,6 +20,10 @@ final class RecyclerTests: XCTestCase {
     }
 
     func testCost() throws {
-        XCTAssertEqual(sut.cost, Resources(metal: 10000, crystal: 6000, deuterium: 2000))
+        XCTAssertEqual(sut.cost, Resources(metal: 10_000, crystal: 6_000, deuterium: 2_000))
+    }
+
+    func testBaseStructuralIntegrity() throws {
+        XCTAssertEqual(sut.baseStructuralIntegrity, 16_000)
     }
 }

@@ -20,6 +20,10 @@ final class ReaperTests: XCTestCase {
     }
 
     func testCost() throws {
-        XCTAssertEqual(sut.cost, Resources(metal: 85000, crystal: 55000, deuterium: 20000))
+        XCTAssertEqual(sut.cost, Resources(metal: 85_000, crystal: 55_000, deuterium: 20_000))
+    }
+
+    func testBaseStructuralIntegrity() throws {
+        XCTAssertEqual(sut.baseStructuralIntegrity, 140_000)
     }
 }

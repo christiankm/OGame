@@ -20,6 +20,10 @@ final class LightFighterTests: XCTestCase {
     }
 
     func testCost() throws {
-        XCTAssertEqual(sut.cost, Resources(metal: 3000, crystal: 1000))
+        XCTAssertEqual(sut.cost, Resources(metal: 3_000, crystal: 1_000))
+    }
+
+    func testBaseStructuralIntegrity() throws {
+        XCTAssertEqual(sut.baseStructuralIntegrity, 4_000)
     }
 }

@@ -20,6 +20,10 @@ final class EspionageProbeTests: XCTestCase {
     }
 
     func testCost() throws {
-        XCTAssertEqual(sut.cost, Resources(crystal: 1000))
+        XCTAssertEqual(sut.cost, Resources(crystal: 1_000))
+    }
+
+    func testBaseStructuralIntegrity() throws {
+        XCTAssertEqual(sut.baseStructuralIntegrity, 1_000)
     }
 }

@@ -10,7 +10,7 @@ public struct Cruiser: Ship {
 
     public let id = 206
     public let name = "Cruiser"
-    public let cost = Resources(metal: 20000, crystal: 7000, deuterium: 2000)
+    public let cost = Resources(metal: 20_000, crystal: 7_000, deuterium: 2_000)
 
     public init() {}
 }

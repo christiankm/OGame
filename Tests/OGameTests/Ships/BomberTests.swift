@@ -20,6 +20,10 @@ final class BomberTests: XCTestCase {
     }
 
     func testCost() throws {
-        XCTAssertEqual(sut.cost, Resources(metal: 50000, crystal: 25000, deuterium: 15000))
+        XCTAssertEqual(sut.cost, Resources(metal: 50_000, crystal: 25_000, deuterium: 15_000))
+    }
+
+    func testBaseStructuralIntegrity() throws {
+        XCTAssertEqual(sut.baseStructuralIntegrity, 75_000)
     }
 }

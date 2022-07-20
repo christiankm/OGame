@@ -1,8 +1,7 @@
 //
-//  DestroyerTests.swift
-//  
-//
-//  Created by Christian Mitteldorf on 20/07/2022.
+//  OGame
+//  Copyright © 2022 Christian Mitteldorf. All rights reserved.
+//  MIT license, see LICENSE file for details.
 //
 
 import OGame
@@ -21,6 +20,10 @@ final class DestroyerTests: XCTestCase {
     }
 
     func testCost() throws {
-        XCTAssertEqual(sut.cost, Resources(metal: 60000, crystal: 50000, deuterium: 15000))
+        XCTAssertEqual(sut.cost, Resources(metal: 60_000, crystal: 50_000, deuterium: 15_000))
+    }
+
+    func testBaseStructuralIntegrity() throws {
+        XCTAssertEqual(sut.baseStructuralIntegrity, 110_000)
     }
 }

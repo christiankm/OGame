@@ -66,8 +66,7 @@ final class CoordinateTests: XCTestCase {
     }
 
     func testDescription() throws {
-        XCTAssertEqual(planetCoordinate
-            .description, "[1:200:13]")
+        XCTAssertEqual(planetCoordinate.description, "[1:200:13]")
         XCTAssertEqual(moonCoordinate.description, "[4:200:13 Moon]")
         XCTAssertEqual(debrisCoordinate.description, "[7:110:4 Debris]")
         XCTAssertEqual(outerSpaceCoordinate.description, "[1:200:16 Outer Space]")

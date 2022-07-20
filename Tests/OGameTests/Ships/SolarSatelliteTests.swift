@@ -20,6 +20,10 @@ final class SolarSatelliteTests: XCTestCase {
     }
 
     func testCost() throws {
-        XCTAssertEqual(sut.cost, Resources(crystal: 2000, deuterium: 500))
+        XCTAssertEqual(sut.cost, Resources(crystal: 2_000, deuterium: 500))
+    }
+
+    func testBaseStructuralIntegrity() throws {
+        XCTAssertEqual(sut.baseStructuralIntegrity, 2_000)
     }
 }

@@ -20,6 +20,10 @@ final class SmallCargoTests: XCTestCase {
     }
 
     func testCost() throws {
-        XCTAssertEqual(sut.cost, Resources(metal: 2000, crystal: 2000))
+        XCTAssertEqual(sut.cost, Resources(metal: 2_000, crystal: 2_000))
+    }
+
+    func testBaseStructuralIntegrity() throws {
+        XCTAssertEqual(sut.baseStructuralIntegrity, 4_000)
     }
 }
