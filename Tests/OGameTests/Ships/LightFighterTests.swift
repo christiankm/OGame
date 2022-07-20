@@ -19,4 +19,7 @@ final class LightFighterTests: XCTestCase {
         XCTAssertEqual(sut.name, "Light Fighter")
     }
 
+    func testCost() throws {
+        XCTAssertEqual(sut.cost, Resources(metal: 3000, crystal: 1000))
+    }
 }

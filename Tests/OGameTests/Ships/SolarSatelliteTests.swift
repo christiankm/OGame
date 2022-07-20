@@ -19,4 +19,7 @@ final class SolarSatelliteTests: XCTestCase {
         XCTAssertEqual(sut.name, "Solar Satellite")
     }
 
+    func testCost() throws {
+        XCTAssertEqual(sut.cost, Resources(crystal: 2000, deuterium: 500))
+    }
 }

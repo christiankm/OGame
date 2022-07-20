@@ -19,4 +19,7 @@ final class CrawlerTests: XCTestCase {
         XCTAssertEqual(sut.name, "Crawler")
     }
 
+    func testCost() throws {
+        XCTAssertEqual(sut.cost, Resources(metal: 2000, crystal: 2000, deuterium: 1000))
+    }
 }

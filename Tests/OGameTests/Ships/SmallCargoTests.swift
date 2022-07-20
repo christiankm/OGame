@@ -19,4 +19,7 @@ final class SmallCargoTests: XCTestCase {
         XCTAssertEqual(sut.name, "Small Cargo")
     }
 
+    func testCost() throws {
+        XCTAssertEqual(sut.cost, Resources(metal: 2000, crystal: 2000))
+    }
 }

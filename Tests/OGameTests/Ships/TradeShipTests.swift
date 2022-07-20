@@ -7,19 +7,20 @@
 import OGame
 import XCTest
 
-final class PathfinderTests: XCTestCase {
+final class TradeShipTests: XCTestCase {
 
-    private let sut = Pathfinder()
+    private let sut = TradeShip()
 
     func testId() throws {
-        XCTAssertEqual(sut.id, 219)
+        XCTAssertEqual(sut.id, 216)
     }
 
     func testName() throws {
-        XCTAssertEqual(sut.name, "Pathfinder")
+        XCTAssertEqual(sut.name, "Trade Ship")
     }
 
     func testCost() throws {
-        XCTAssertEqual(sut.cost, Resources(metal: 8000, crystal: 15000, deuterium: 8000))
+        XCTAssertEqual(sut.cost, Resources())
     }
+
 }

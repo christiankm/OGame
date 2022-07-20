@@ -10,7 +10,7 @@ import XCTest
 final class DiameterTests: XCTestCase {
 
     func testDiameterIsInt() {
-        let sut: Diameter = 8888
-        XCTAssertEqual(sut, Int(8888))
+        let sut: Diameter = 8_888
+        XCTAssertEqual(sut, Int(8_888))
     }
 }

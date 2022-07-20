@@ -6,9 +6,9 @@
 
 import Foundation
 
-public protocol Ship: Buildable, Identifiable, Hashable, CustomStringConvertible {
+public protocol Ship: Unit, Buildable, FixedPriceable, Identifiable, Hashable, CustomStringConvertible {
+
     var name: String { get }
-//    var cost: Resources { get }
     // var structuralIntegrity { get }
 
     // TODO: Add details and constants for base speed, base fuel consumption, base storage capacity, costs, rapidfire, structural points, weapons attack, shields, etc.. -- get from other model files and delete them --- NOW, might as well.

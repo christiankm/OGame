@@ -18,4 +18,8 @@ final class BattleshipTests: XCTestCase {
     func testName() throws {
         XCTAssertEqual(sut.name, "Battleship")
     }
+
+    func testCost() throws {
+        XCTAssertEqual(sut.cost, Resources(metal: 45_000, crystal: 15_000))
+    }
 }

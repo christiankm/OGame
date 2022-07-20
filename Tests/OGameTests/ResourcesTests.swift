@@ -17,15 +17,15 @@ final class ResourcesTests: XCTestCase {
     }
 
     func testInit() throws {
-        let sut = Resources(metal: 100_000, crystal: 45000, deuterium: 10000)
+        let sut = Resources(metal: 100_000, crystal: 45_000, deuterium: 10_000)
         XCTAssertEqual(sut.metal, 100_000)
-        XCTAssertEqual(sut.crystal, 45000)
-        XCTAssertEqual(sut.deuterium, 10000)
+        XCTAssertEqual(sut.crystal, 45_000)
+        XCTAssertEqual(sut.deuterium, 10_000)
     }
 
     func testEquatable() throws {
-        let sutA = Resources(metal: 100_000, crystal: 45000, deuterium: 10000)
-        let sutB = Resources(metal: 100_000, crystal: 45000, deuterium: 10000)
+        let sutA = Resources(metal: 100_000, crystal: 45_000, deuterium: 10_000)
+        let sutB = Resources(metal: 100_000, crystal: 45_000, deuterium: 10_000)
         XCTAssertEqual(sutA, sutB)
 
         XCTAssertNotEqual(sutA, Resources())

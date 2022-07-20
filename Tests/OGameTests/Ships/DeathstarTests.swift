@@ -19,4 +19,7 @@ final class DeathstarTests: XCTestCase {
         XCTAssertEqual(sut.name, "Deathstar")
     }
 
+    func testCost() throws {
+        XCTAssertEqual(sut.cost, Resources(metal: 5000000, crystal: 4000000, deuterium: 1000000))
+    }
 }

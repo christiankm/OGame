@@ -19,4 +19,7 @@ final class CruiserTests: XCTestCase {
         XCTAssertEqual(sut.name, "Cruiser")
     }
 
+    func testCost() throws {
+        XCTAssertEqual(sut.cost, Resources(metal: 20000, crystal: 7000, deuterium: 2000))
+    }
 }

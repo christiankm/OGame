@@ -9,7 +9,8 @@ import Foundation
 public struct Deathstar: Ship {
 
     public let id = 214
-    public var name: String = "Deathstar"
+    public let name = "Deathstar"
+    public let cost = Resources(metal: 5_000_000, crystal: 4_000_000, deuterium: 1_000_000)
 
     public init() {}
 }

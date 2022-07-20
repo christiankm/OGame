@@ -19,4 +19,7 @@ final class EspionageProbeTests: XCTestCase {
         XCTAssertEqual(sut.name, "Espionage Probe")
     }
 
+    func testCost() throws {
+        XCTAssertEqual(sut.cost, Resources(crystal: 1000))
+    }
 }

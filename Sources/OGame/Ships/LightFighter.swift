@@ -10,6 +10,7 @@ public struct LightFighter: Ship {
 
     public let id = 204
     public let name: String = "Light Fighter"
+    public let cost = Resources(metal: 3_000, crystal: 1_000)
 
     public init() {}
 }

@@ -19,4 +19,7 @@ final class ReaperTests: XCTestCase {
         XCTAssertEqual(sut.name, "Reaper")
     }
 
+    func testCost() throws {
+        XCTAssertEqual(sut.cost, Resources(metal: 85000, crystal: 55000, deuterium: 20000))
+    }
 }

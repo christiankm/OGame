@@ -19,4 +19,7 @@ final class ColonyShipTests: XCTestCase {
         XCTAssertEqual(sut.name, "Colony Ship")
     }
 
+    func testCost() throws {
+        XCTAssertEqual(sut.cost, Resources(metal: 10000, crystal: 20000, deuterium: 10000))
+    }
 }

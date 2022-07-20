@@ -19,4 +19,7 @@ final class RecyclerTests: XCTestCase {
         XCTAssertEqual(sut.name, "Recycler")
     }
 
+    func testCost() throws {
+        XCTAssertEqual(sut.cost, Resources(metal: 10000, crystal: 6000, deuterium: 2000))
+    }
 }

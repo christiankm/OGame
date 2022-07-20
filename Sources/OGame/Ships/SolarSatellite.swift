@@ -9,7 +9,8 @@ import Foundation
 public struct SolarSatellite: Ship {
 
     public let id = 212
-    public var name: String = "Solar Satellite"
+    public let name = "Solar Satellite"
+    public let cost = Resources(crystal: 2000, deuterium: 500)
 
     public init() {}
 }

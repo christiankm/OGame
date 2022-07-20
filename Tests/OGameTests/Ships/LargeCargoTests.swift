@@ -19,4 +19,7 @@ final class LargoCargoTests: XCTestCase {
         XCTAssertEqual(sut.name, "Large Cargo")
     }
 
+    func testCost() throws {
+        XCTAssertEqual(sut.cost, Resources(metal: 6000, crystal: 6000))
+    }
 }
