@@ -18,9 +18,9 @@ final class AllianceClassTests: XCTestCase {
 
     func testName() throws {
         XCTAssertEqual(AllianceClass.notSelected.name, "No class")
-        XCTAssertEqual(AllianceClass.warrior.name, "Collector")
-        XCTAssertEqual(AllianceClass.trader.name, "General")
-        XCTAssertEqual(AllianceClass.researcher.name, "Discoverer")
+        XCTAssertEqual(AllianceClass.warrior.name, "Warrior")
+        XCTAssertEqual(AllianceClass.trader.name, "Trader")
+        XCTAssertEqual(AllianceClass.researcher.name, "Researcher")
     }
 
     func testIsWarrior() throws {
